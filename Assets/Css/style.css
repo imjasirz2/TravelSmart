@@ -1,0 +1,237 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'poppins';
+}
+
+.navbar-nav .nav-link {
+  transition: all 0.3s ease;
+  display: inline-block; /* needed for scale to work properly */
+  padding: 0.5rem 1rem;  /* optional to prevent overlap */
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.2);
+  background-color: white;
+  color: #198754 !important;
+  border-radius: 5px; /* optional for nicer look */
+}
+
+/* For dropdown items hover */
+.dropdown-menu .dropdown-item:hover {
+  background-color: white;
+  color: #198754 !important;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+
+.card-hover {
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.card-hover img {
+  width: 100%;
+  display: block;
+}
+
+.card-hover .card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #198754a6;
+  color: white;
+  padding: 15px;
+}
+
+.card-hover h5 {
+  margin: 0;
+}
+
+.card-hover .tagline {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  margin-top: 5px;
+}
+
+.card-hover:hover .tagline {
+  max-height: 100px;
+}
+
+.zoom {
+  transition: transform 0.4s ease; /* smooth animation */
+}
+
+.card:hover .zoom {
+  transform: scale(1.60); /* thoda zoom */
+}
+
+/* Icon size control */
+.icon-size {
+  width: 80px;       /* icon width */
+  height: 80px;      /* icon height */
+  object-fit: contain; /* prevent stretching */
+  margin: 20px auto 0 auto; /* center horizontally and add top space */
+}
+
+/* Responsive icon size */
+@media (max-width: 768px) {
+  .icon-size {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-size {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Make all cards same height */
+.card.h-100 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.equal-height {
+  display: flex;
+  flex-wrap: wrap; /* mobile responsive ke liye */
+}
+
+.equal-height > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.flag-wrapper {
+    position: relative;
+    margin-top: -55px;
+    z-index: 1;
+}
+.flag-img {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    margin: 0;
+    padding: 3px;
+    border-radius: 50%;
+}
+/* .country-img {
+    height: 200px;
+    object-fit: cover;
+} */
+
+
+.icon-circle {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 40px;
+}
+.process-number {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.image
+{scale: 200%;}
+
+.control:focus {
+  border-color: #198754 !important;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+  outline: none;
+}
+
+ .test-decoration-none .about
+ {
+  text-decoration: none !important;
+  color: black;
+ }
+/* 
+ .page-header .container h2 {
+    font-size: 40px !important;
+    line-height: 110px !important;
+}
+
+.page-header
+{
+    width: 100% !important;
+    height: 60vh;
+    max-height: 80vh;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-attachment: scroll !important;
+  background-image: url(".../Images/header-visa-1.jpg");
+} */
+
+
+/* ABOUT PAGE */
+.page-header {
+  height: 60vh;
+  max-height: 80vh;
+  background-image: url("../Images/header-visa-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.page-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.671);
+  z-index: 1;
+}
+
+.page-header .content {
+  z-index: 2;
+  color: #000;
+}
+
+.page-header h2 {
+  font-size: 40px;
+}
+
+.page-header p {
+  font-size: 16px;
+}
+
+.team-card {
+  transition: all 0.3s ease-in-out;
+}
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+.team-img img {
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.social-links a {
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+.social-links a:hover {
+  color: #0d6efd; /* Bootstrap primary */
+}
+
